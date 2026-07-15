@@ -23,10 +23,10 @@ const principles = [
 
 // Tecnologias que aparecem nos projetos — edite à vontade.
 const stack = [
-  'React', 'TypeScript', 'Vite', 'Flask', 'Python', 'Node.js',
-  'Supabase', 'Convex', 'PostgreSQL', 'T-SQL', 'Docker', 'nginx',
-  'OpenAI', 'GPT-4o', 'Gemini', 'Claude', 'FFmpeg', 'Remotion',
-  'n8n', 'Chatwoot', 'Cloudflare', 'Fly.io', 'Meta', 'edge-tts',
+  'React', 'TypeScript', 'Next.js', 'Vite', 'Flask', 'Python',
+  'Node.js', 'Supabase', 'Convex', 'PostgreSQL', 'Docker', 'Streamlit',
+  'OpenAI', 'GPT-4o', 'Gemini', 'MediaPipe', 'FFmpeg', 'Tailwind CSS',
+  'Pix EFI', 'Teldrive', 'Cloudflare', 'Fly.io', 'Notion API', 'Telegram',
 ]
 
 export default function Portfolio() {
@@ -88,16 +88,16 @@ export default function Portfolio() {
             <span className="eyebrow">About</span>
             <h2>Construindo sistemas, não demos.</h2>
             <p className="lead-copy">
-              Comecei mexendo fundo em software onde a maioria para na superfície:
-              modificando servidores de jogo camada por camada — arquivos do cliente,
-              modelos, banco T-SQL e serviços — até a coisa funcionar em produção. Essa
-              teimosia de ir até a raiz virou o método de tudo que faço.
+              Gosto de ir fundo onde a maioria para na superfície: entender o sistema
+              camada por camada — do frontend ao banco, do worker de pagamento à VPS —
+              até a coisa funcionar de verdade em produção. Essa teimosia de ir até a
+              raiz virou o método de tudo que faço.
             </p>
             <p className="lead-copy">
-              Hoje isso vira produto: esteiras de conteúdo com IA, uma marca de roupas
-              com pipeline próprio de imagem-para-vídeo, uma loja com checkout Pix real,
-              vídeos de apresentação gerados em código e motores de agentes para
-              operações de leads. Full-stack de verdade — do banco ao deploy.
+              Isso vira produto: uma loja com checkout Pix real, esteiras de conteúdo
+              com IA, um app de vistoria self-service, storage próprio sobre o Telegram,
+              dashboards de operação e ferramentas de vídeo. Full-stack de verdade — do
+              banco ao deploy.
             </p>
             <p className="pf-origin-line">
               Bilíngue, Brasil. Entrego sistemas que ficam de pé sozinhos.
@@ -115,8 +115,8 @@ export default function Portfolio() {
               <span>imagem, vídeo, texto e voz</span>
             </div>
             <div className="pf-about-stat">
-              <strong>Game infra</strong>
-              <span>modding em produção, T-SQL</span>
+              <strong>Infra própria</strong>
+              <span>VPS, Fly.io, Cloudflare, self-hosted</span>
             </div>
             <div className="pf-about-stat">
               <strong>borges.lab</strong>

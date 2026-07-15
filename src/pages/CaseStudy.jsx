@@ -45,6 +45,11 @@ export default function CaseStudy() {
           </div>
           <h1 className="pf-case-title">{project.title}</h1>
           <p className="pf-case-hero-tagline">{project.tagline}</p>
+          {project.link && (
+            <a className="btn ghost btnlink" href={project.link} target="_blank" rel="noreferrer" style={{ marginTop: '1.2rem' }}>
+              Ver repositório ↗
+            </a>
+          )}
         </div>
       </header>
 
