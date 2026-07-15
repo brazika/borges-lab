@@ -124,6 +124,23 @@ h1, h2, h3 {
 }
 .pf-nav-links { display: flex; gap: 1.6rem; font-size: 0.9rem; color: var(--muted); }
 .pf-nav-links a:hover { color: var(--text); }
+.pf-nav-actions { display: flex; align-items: center; gap: 0.8rem; }
+
+/* Language toggle */
+.pf-lang { display: inline-flex; border: 1px solid var(--panel-brd); border-radius: 999px; overflow: hidden; }
+.pf-lang button {
+  background: none; border: none; cursor: pointer;
+  font-family: var(--body); font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0.05em; color: var(--muted);
+  padding: 0.4rem 0.7rem; transition: background 0.15s ease, color 0.15s ease;
+}
+.pf-lang button:hover { color: var(--text); }
+.pf-lang button.active { background: var(--lime); color: #06231a; }
+
+/* Stack icons */
+.pf-stack-ico { width: 18px; height: 18px; object-fit: contain; flex: none; }
+.pf-stack-chip { display: inline-flex; align-items: center; gap: 0.5rem; }
+.pf-stack-badge { display: inline-flex; align-items: center; gap: 0.5rem; }
 
 /* ── Hero ────────────────────────────────────────────────────────────────── */
 .pf-hero { padding: 7rem 0 5rem; }
