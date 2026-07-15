@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { projects } from '../data/projects.js'
 import { iconUrl } from '../stackIcons.js'
+import { asset } from '../media.js'
 import { useLang, ui } from '../i18n.jsx'
 
 const CONTACT_EMAIL = 'contato@borges.lab' // ← troque pelo seu e-mail real
@@ -117,7 +118,7 @@ export default function Portfolio() {
                     className="pf-case-card-visual"
                     style={
                       e.thumbnail
-                        ? { backgroundImage: `linear-gradient(180deg, rgba(0,0,0,.05), rgba(0,0,0,.55)), url(${e.thumbnail})` }
+                        ? { backgroundImage: `linear-gradient(180deg, rgba(0,0,0,.05), rgba(0,0,0,.55)), url(${asset(e.thumbnail)})` }
                         : { background: e.accent }
                     }
                   >

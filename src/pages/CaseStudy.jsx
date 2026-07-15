@@ -1,6 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { projects, getProject } from '../data/projects.js'
 import { iconUrl } from '../stackIcons.js'
+import { asset } from '../media.js'
 import { useLang, ui } from '../i18n.jsx'
 
 const CONTACT_EMAIL = 'contato@borges.lab' // ← troque pelo seu e-mail real
@@ -58,9 +59,9 @@ export default function CaseStudy() {
         {/* VISUAL */}
         <div className="pf-case-visual-large" style={{ background: project.accent }}>
           {project.videoSrc ? (
-            <video className="pf-video-stage" src={project.videoSrc} controls playsInline />
+            <video className="pf-video-stage" src={asset(project.videoSrc)} controls playsInline preload="metadata" />
           ) : project.thumbnail ? (
-            <img className="pf-video-stage" src={project.thumbnail} alt={project.title} />
+            <img className="pf-video-stage" src={asset(project.thumbnail)} alt={project.title} />
           ) : (
             <span className="pf-case-play">▶</span>
           )}

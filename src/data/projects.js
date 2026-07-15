@@ -162,6 +162,7 @@ export const projects = [
     title: 'Mission Control',
     stack: ['React', 'TypeScript', 'Convex', 'Tailwind CSS', 'Notion API'],
     accent: g2,
+    videoSrc: 'videos/mc-en.mp4',
     pt: {
       category: 'Produto interno',
       tagline: 'Dashboard de operações para um pipeline de leads.',
